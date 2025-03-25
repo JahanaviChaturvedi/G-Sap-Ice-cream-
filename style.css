@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+  /* font-family: "Bebas Neue", serif; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --text-color: #342b0c;
+  --bg-color: #fefbeb;
+  --inner-bg-color: #ede8d5;
+  --btn-color: #f3c30e;
+}
+
+body {
+  background: var(--bg-color);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+
+.sections {
+  padding-block: 3rem;
+}
+
+/* Nav-Bar Styling */
+.navbar {
+  justify-content: space-between;
+}
+
+.navlist {
+  gap: 3rem;
+  height: 13vh;
+}
+
+.link {
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+.link:hover {
+  color: var(--btn-color);
+  font-size: 0.96rem;
+  transition: 0.2s ease-in-out;
+}
+
+.logo {
+  font-style: 1.3rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.fa-ice-cream {
+  font-size: 1.8rem;
+}
+
+.nav-icons {
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icon {
+  background: var(--btn-color);
+  color: var(--text-color);
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  border: 0.1rem solid var(--btn-color);
+  transition: 0.5s ease-in-out;
+}
+
+.icon:hover {
+  background: transparent;
+}
+
+/* Hero Section Styling */
+
+.hero {
+  min-height: 120vh;
+  background: var();
+  background-image: url(/assets/images/almonds.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 57%;
+  padding-top: 4rem;
+  position: relative;
+}
+
+.inner-hero {
+  background: var(--inner-bg-color);
+  width: 100%;
+  border-radius: 3rem;
+  position: relative;
+  isolation: isolate;
+}
+
+h1 {
+  font-size: 25vh;
+  font-family: "Bebas Neue", serif;
+  text-align: center;
+  letter-spacing: 1rem;
+  color: var(--text-color);
+  padding: 3rem 5rem;
+}
+
+.inner-image-center {
+  position: absolute;
+  left: 44%;
+  transform: translateX(-50%);
+  top: 29%;
+  width: 25vw;
+  rotate: 30deg;
+  z-index: 1;
+}
+
+.hero-right-image,
+.hero-left-image {
+  position: absolute;
+  width: 13vw;
+  top: 0;
+}
+
+.hero-right-image {
+  right: 0;
+  z-index: -1;
+}
+
+.hero-left-image {
+  left: 0;
+}
+
+/*Second Section Styling*/
+
+h2 {
+  font-size: 5vw;
+  font-family: "Bebas Neue", serif;
+  letter-spacing: 0.3rem;
+  color: var(--text-color);
+}
+
+.card-container {
+  gap: 4rem;
+  height: 80vh;
+  align-items: flex-end;
+}
+
+.card {
+  flex: 1;
+  background: var(--inner-bg-color);
+  padding: 12rem 2.5rem 2.5rem;
+  border-radius: 1.5rem;
+  position: relative;
+}
+.card-image {
+  width: 15rem;
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card .content {
+  justify-content: space-between;
+}
+
+span {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.dark-para {
+  color: var(--text-color);
+}
+
+/*Third Section Styling*/
+
+.products {
+  position: relative;
+  background: var(--text-color);
+  text-align: center;
+  color: var(--bg-color);
+  padding-block: 8rem;
+  border-radius: 1.5rem;
+}
+
+.btn {
+  background: var(--btn-color);
+  padding: 1rem 2.5rem;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  border: 0.1rem solid var(--btn-color);
+  border-radius: 100vh;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--inner-bg-color);
+  padding: 1rem 2.5rem;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  border: 0.1rem solid var(--btn-color);
+  border-radius: 100vh;
+  transition: 0.3s ease-in-out;
+}
+
+.products h2 {
+  font-size: 5vw;
+  font-family: "Bebas Neue", serif;
+  letter-spacing: 0.3rem;
+}
+.products p {
+  padding: 2rem;
+}
+
+.light-para {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--bg-color);
+}
+.products h2 {
+  color: var(--bg-color);
+}
+
+.product-right-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25rem;
+}
+
+.product-left-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 23rem;
+  z-index: 2;
+}
+
+.healthy-section {
+  background: var(--inner-bg-color);
+  padding-top: 5rem;
+}
+
+.milk-image{
+  z-index: 3;
+
+}
+
+.milk-image img {
+  display: block;
+}
+
+.healthy-section .content img {
+  width: 15rem;
+  display: block;
+  float: right;
+}
+
+.healthy-section .container {
+  align-items: flex-end;
+}
+.commitment {
+  text-align: center;
+  background-image: url(/assets/images/leaves.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.commitment .container img {
+  width: 29rem;
+}
+
+.commitment .container p {
+  max-width: 650px;
+  margin: 1.5rem auto;
+}
+
+footer {
+  background: var(--text-color);
+  text-align: center;
+  padding-block: 3rem;
+  margin-top: 3rem;
+}
